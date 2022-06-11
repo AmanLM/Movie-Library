@@ -1,0 +1,16 @@
+<div class="navbar">
+
+    <% if(locals.user){ %>
+        <ul class="nav1">
+        <li><h1>MovieApp</h1></li>
+        <li><a href="/users/profile"><%= user.name%></a></a></li> 
+        <li><a href="/users/signout">Sign Out</a></li>
+        </ul>
+    <% }else{ %>
+        <ul class="nav1">
+        <li><h1>MovieApp</h1></li>
+        <li><a href="/users/signin">Sign In</a></li>
+        <li><a href="/users/signup">Sign Up</a></li>
+        </ul>
+    <%}%>
+    </div>

@@ -1,0 +1,25 @@
+{
+  "name": "movies",
+  "version": "1.0.0",
+  "description": "A Movie Info App",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "AmanLM",
+  "license": "ISC",
+  "dependencies": {
+    "connect-mongo": "^4.6.0",
+    "cookie-parser": "^1.4.6",
+    "ejs": "^3.1.8",
+    "express": "^4.18.1",
+    "express-ejs-layouts": "^2.5.1",
+    "express-layouts": "^1.0.0",
+    "express-session": "^1.17.3",
+    "mongo-store": "^0.0.2",
+    "mongoose": "^6.3.6",
+    "passport": "^0.6.0",
+    "passport-local": "^1.0.0"
+  }
+}

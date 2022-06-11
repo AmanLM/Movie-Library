@@ -1,0 +1,17 @@
+<style>
+    .sign-in{
+        text-align: center;
+        margin: 2%;
+    }
+    h1{
+        padding: 1%;
+    }
+</style>
+<div class="sign-in">
+<h1>SignIn</h1>
+<form action="/users/createsession" method="post">
+    <input type="email" name="email" placeholder="Enter Username" required><br><br>
+    <input type="password" name="password" placeholder="Enter Password" required><br><br>
+    <input type="submit" value="SignIn">
+</form>
+</div>

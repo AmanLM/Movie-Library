@@ -1,0 +1,19 @@
+<style>
+    .sign-up{
+        text-align: center;
+        margin: 2%;
+    }
+    h1{
+        padding: 1%;
+    }
+</style>
+<div class="sign-up">
+<h1>SignUP</h1>
+<form action="/users/create" method="post">
+    <input type="text" name="name" placeholder="Enter Name" required><br><br>
+    <input type="email" name="email" placeholder="Enter Username" required><br><br>
+    <input type="password" name="password" placeholder="Enter Password" required><br><br>
+    <input type="password" name="confirm_password" placeholder="Confirm Password" required><br><br>
+    <input type="submit" value="SignUp">
+</form>
+</div>

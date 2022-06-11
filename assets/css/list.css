@@ -1,0 +1,23 @@
+.movies-list{
+    text-align: center;
+    margin: 2% 30%;
+}
+.movies-list h1{
+    font-size: 2.5vw;
+}
+
+.movies-list ul {
+    display: flex;
+    /* justify-content: center; */
+    justify-content: space-between;
+}
+.movies-list ul li{
+    list-style: none;
+    font-size: 2vw;
+    padding: 1% 1%;
+}
+
+.movies-list ul li a{
+    text-decoration: none;
+    color: rgb(184, 84, 84);
+}
