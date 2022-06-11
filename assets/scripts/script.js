@@ -23,7 +23,7 @@ function showDetails(info){
             <div class="info">
                 <div class="movie-info-1">
                     <h1 class="movie-title">Name of a Movie : ${info.Title}</h1>
-                    <ul class="movie-misc-info">
+                    <ul class="movie-info">
                         <li class="year">Year: ${info.Year}</li>
                         <li class="released">Released: ${info.Released}</li>
                         <li class="country">Country: ${info.Country}</li>
@@ -65,7 +65,7 @@ function showDetails(info){
 
         playlistButton.innerHTML = `
         <form action="/movies/playlist" method="post">
-            <input type="hidden" name="Name" value=${info.Title}>
+            <input type="hidden" name="Name" value="${info.Title}">
             <input type="submit" value="Add to Playlist" id="palylist-button">
         </form> 
             `;

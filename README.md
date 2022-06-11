@@ -49,6 +49,9 @@ Install the library using the command `npm install express-session` in the termi
 MongoDB session store for Connect and Express written in Typescript
 Install the connect-mongo using `npm install connect-mongo`
 
+## 11. npm install dotenv
+Install `npm install env` for .env file
+
 # 📌 Prerequisites
 
 ###  1. System requirement :

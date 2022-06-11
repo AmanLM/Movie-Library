@@ -64,11 +64,11 @@ input{
     padding: 2%;
 }
 
-.movie-info ul{
+.movie-info-1 ul{
     display: flex;
 }
 
-.movie-info ul li{
+.movie-info-1 .movie-info li{
     flex-direction: row;
     padding: 2% 0%;
     padding-right: 10%;
@@ -141,6 +141,8 @@ p{
     font-weight: 600;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
+
 @keyframes gradient {
     0% {
         background-position: 0% 50%;
