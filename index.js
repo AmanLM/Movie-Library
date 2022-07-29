@@ -19,19 +19,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 //database
-// const db = require('./config/mongoose');
-mongoose
-  .connect(process.env.MONGODB_URL,{
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
-  .then(() => {
-    console.log('Connecting to MongoDB cloud');
-  })
-  .catch((err) => {
-    console.log(err);
-  });
-
+const db = require('./config/mongoose');
 //include layouts
 const expressLayouts = require('express-ejs-layouts');
 app.use(expressLayouts);
@@ -59,7 +47,7 @@ app.use(session({
     },
     store : MongoStore.create(
         {
-            mongoUrl : 'mongodb://localhost/majorproject1',
+            mongoUrl : 'mongodb+srv://mullaaman0508:L%40tur123@cluster0.buvhlnw.mongodb.net/?retryWrites=true&w=majority',
             autoRemove : 'disabled'
         },function(err){
             console.log(err || "Connection is fine");
