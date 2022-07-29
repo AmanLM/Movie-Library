@@ -19,7 +19,19 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 //database
-const db = require('./config/mongoose');
+// const db = require('./config/mongoose');
+mongoose
+  .connect(process.env.MONGODB_URL,{
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  })
+  .then(() => {
+    console.log('Connecting to MongoDB cloud');
+  })
+  .catch((err) => {
+    console.log(err);
+  });
+
 //include layouts
 const expressLayouts = require('express-ejs-layouts');
 app.use(expressLayouts);
